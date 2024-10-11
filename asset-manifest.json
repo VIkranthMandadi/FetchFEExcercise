@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/FetchFEExercise/static/css/main.e6c13ad2.css",
+    "main.js": "/FetchFEExercise/static/js/main.fa4c3b41.js",
+    "static/js/453.c3d664b8.chunk.js": "/FetchFEExercise/static/js/453.c3d664b8.chunk.js",
+    "index.html": "/FetchFEExercise/index.html",
+    "main.e6c13ad2.css.map": "/FetchFEExercise/static/css/main.e6c13ad2.css.map",
+    "main.fa4c3b41.js.map": "/FetchFEExercise/static/js/main.fa4c3b41.js.map",
+    "453.c3d664b8.chunk.js.map": "/FetchFEExercise/static/js/453.c3d664b8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.fa4c3b41.js"
+  ]
+}
