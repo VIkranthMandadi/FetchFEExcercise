@@ -1,25 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  useLocation,
+  useNavigate,
+} from "react-router-dom";
+import Home from "./pages/Home";
+import { Box, Button } from "@chakra-ui/react";
+import RandomDogImages from "./pages/RandomImage";
 
-function App() {
+import DogSelection from "./pages/DogSelection";
+const App = () => {
+  const location = useLocation(); // Get the current location
+  const navigate = useNavigate(); // Hook to navigate back
+
+  // Check if the current path is not the homepage ("/")
+  const showBackButton = location.pathname !== "/";
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <Box p={6} position="relative">
+      {/* Conditionally render Back Button */}
+      {showBackButton && (
+        <Button
+          colorScheme="teal"
+          onClick={() => navigate(-1)} // Navigate back
+          position="absolute"
+          top="10px"
+          left="10px"
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          Back
+        </Button>
+      )}
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/dogselection" element={<DogSelection />} />
+        <Route path="/randomgeneration" element={<RandomDogImages />} />
+      </Routes>
+    </Box>
   );
-}
+};
 
 export default App;
