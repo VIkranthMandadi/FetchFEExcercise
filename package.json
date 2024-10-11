@@ -2,7 +2,7 @@
   "name": "fetchfrontend",
   "version": "0.1.0",
   "private": true,
-  "hompage": "https://VIkranthmandadi.github.io/fetchfrontend",
+  "hompage": "https://VIkranthMandadi.github.io/fetchfrontend",
   "dependencies": {
     "@chakra-ui/react": "^2.10.2",
     "@testing-library/jest-dom": "^5.17.0",
